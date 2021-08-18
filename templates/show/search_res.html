@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show</title>
+</head>
+<body>
+
+
+    <div class="new_stu" style="margin: 5%; padding: 5%; background-color: aqua;">
+        <fieldset>
+<legend>search student :- </legend>
+            <form method='GET' >
+                <input type="text" name="en_no" placeholder="year/CTAE/xxx" required />
+                <input type="text" name="sem"  placeholder="1-8" required  />
+                &nbsp; <button type="submit">Search</button>
+            
+            </form>
+            <br><br>
+            {% if messages %}
+                {% for msg in messages %}
+                    {{ msg }}
+                {% endfor %}
+            {% endif %}
+         </fieldset>
+    
+    </div>
+</body>
+</html>

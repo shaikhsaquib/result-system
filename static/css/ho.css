@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(13, 17, 17);
+    height: 100vh;
+    width: 100%;
+    overflow:  hidden;
+}
+
+.round-img{
+    position: absolute;
+    top: -300px;
+    left: -150px;   
+    
+}
+
+.text{
+    position: absolute;
+    bottom: -400px;
+    right: -300px;
+
+}
+/* 
+.show{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20rem;
+    color: aliceblue;
+} */

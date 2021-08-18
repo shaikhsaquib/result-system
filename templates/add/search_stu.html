@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serached-Student</title>
+</head>
+<body>
+
+
+    <div class="new_stu" style="margin: 5%; padding: 5%; background-color: aqua;">
+        <fieldset>
+<legend>search student :- </legend>
+            <form method="GET" action=" {% url 'search_student' %}">
+                <input type="text" name="q_student" placeholder="year/CTAE/xxx" required />&nbsp; <button type="submit">Search</button>
+            
+            </form>
+            <br><br>
+            {% if messages %}
+                {% for msg in messages %}
+                    {{ msg }}
+                {% endfor %}
+            {% endif %}
+         </fieldset>
+    
+    </div>
+    <hr>
+
+    
+</body>
+</html>
